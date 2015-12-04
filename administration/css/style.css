@@ -1,0 +1,197 @@
+table, th, td {
+   border: 1px solid #72798a !important;
+ vertical-align: middle !important;
+ }
+
+ 
+	
+ 
+
+th
+{
+	background-color:#336699;
+	color:white;
+	border-right-color:white !important;
+}
+
+tr:hover
+{
+	 background: #9bb5d0 !important;
+	 color:white;  
+}
+
+ 
+tr:nth-child(even) {
+    background: #ecedff;
+}
+
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+
+
+
+
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgb(130, 147, 171);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    
+}
+
+.navbar-default .navbar-toggle {
+     border-color: rgba(0, 0, 0, 0);  
+}
+
+
+ #MainContainer
+ {
+	margin-top:50px;
+ }
+ 
+ .form-control
+ {
+	margin-bottom:10px !important;	 
+ }
+ h4
+ {
+	color:#666;	 
+ }
+  
+ .navbar-default {
+    background-color: #f8f8f8 !important;
+    background-color: rgb(2, 105, 173) !important;
+    border-color: #e7e7e7 !important;
+	color:white !important;
+}
+
+	.navbar-default .navbar-nav>li>a 
+	{
+    color: white !important;
+	}
+	
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #115475;
+}
+
+	 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #115475 !important;
+}
+
+	@media (max-width: 767px)
+	{
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #FFF;
+	}
+	
+	
+	}
+@media (max-width: 767px)
+{
+	#iwilllogo
+	{
+	 	width:50px;
+	 }
+	
+	
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #FFF;
+}
+} 

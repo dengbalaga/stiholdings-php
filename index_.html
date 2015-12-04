@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>STI Education Systems Holdings</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="assets/css/style_inside.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+<link href="css/demo.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link href="css/full-slider2.css" rel="stylesheet">
+
+
+
+
+	
+    	
+    
+    
+    
+<style type="text/css">
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #666;
+  
+  
+    width: 100%;
+    height: 100%;    
+  
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: 300 }
+*,
+*:focus { outline: none !important }
+a { color: #2d2d2d }
+a:hover,
+a:focus {
+  color: #0c86b6;
+  text-decoration: none;
+}
+.hiding { opacity: 0 }
+.showing { opacity: 1 }
+.img-rounded {
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
+}
+.btn-blue {
+  color: #fff;
+  background-color: #0093cf;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  color: #fff;
+/*  background-color: #2a3940;*/
+  background-color: #0060aa;
+}
+.btn-green {
+  color: #fff;
+  background-color: #71be3c;
+}
+.btn-green:hover,
+.btn-green:focus {
+  color: #fff;
+  background-color: #2a3940;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #2a3940;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  color: #fff;
+  background-color: #2a3940;
+}
+.loader {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.fading-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  background-image: url(../img/fading-line.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.page { overflow: hidden }
+.page .content { padding: 60px 0 }
+.page .content.cover { padding: 240px 0 }
+.page .heading h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.page .border {
+  width: 80px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #0060aa;
+}
+.page .heading p { margin: 20px auto 0 }
+
+
+
+
+
+
+
+/*html, body {
+height: 100%;
+padding: 0;
+margin: 0;
+}
+body {
+min-height: 600px;
+}
+body * {
+font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+font-size: 14px;
+color: #333;
+line-height: 22px;
+}*/
+#wrapper {
+width: 100%;
+height: 100%;
+position: relative;
+}
+.caroufredsel_wrapper {
+/*	width: 100% !important;
+	height: 100% !important;*/
+}
+#carousel div {
+	width: 100%;
+/*	height: 100%; */
+	overflow: hidden;
+	float: left;
+}
+#carousel div img {
+/*	width: auto;*/
+/*	height: auto;*/
+	min-width: 100%;
+/*	min-height: 100%;*/
+}
+#text {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 350px;
+	height: 350px;
+	padding: 50px;
+	margin: -225px 0 0 -225px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	box-shadow: 0 0 50px #000;
+	border-radius: 20px;
+}
+#text h4 {
+	font-size: 33px;
+	line-height: 25px;
+	margin: 0 0 20px 0;
+}
+#text small, #text small * {
+	font-size: 12px;
+	color: #666;
+}
+	
+	
+	
+	
+.navbar-default.affix {
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  border-bottom-color: transparent;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+.navbar {
+  border-radius: 0 !important;
+}	
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	
+}
+h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:300;
+	line-height:32px;
+}
+h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+		font-weight:300;
+}
+h4 {
+font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:300;
+	line-height:22px;
+}
+h5 {
+font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:300;
+	line-height:20px;
+}
+
+</style>
+
+
+    <style type="text/css">
+	
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-submenu {
+    position: relative;
+	width:230px;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	width:230px;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.logo_bottom {	
+	height:70px;
+	width:auto;
+	margin-right:0px;
+	margin-bottom:10px;
+}
+
+
+    </style>    
+    
+    
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+
+
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#fff;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+<!--           <a class="navbar-brand nav-external" href="index.html" style="margin:0; padding:0;"><img src="assets/img/logo_navbar.png" style="height:44px; width:auto; margin:3px 0px 2px 0px; padding:0;background-color:#0F3; "></a>-->
+<!--           <a class="navbar-brand nav-external" href="index.html" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute.png" style="height:80px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; "></a>-->
+           <div class="logowrapper-hor">
+           <a class="navbar-brand nav-external" href="index.html" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute.png" style="height:70px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; " class="nav-logo-absolutesmall"></a>
+		  </div>
+           <div class="logowrapper">
+<!--           <a class="navbar-brand nav-external" href="index.html" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute2.png" style="height:240px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; " class="nav-logo-absolutebig"></a>-->
+           <a class="navbar-brand nav-external" href="index.html" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute.png" style="height:70px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; " class="nav-logo-absolute"></a>
+		</div>
+
+        </div>
+        <div class="collapse navbar-collapse">
+
+<!--            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/fontenele/bootstrap-navbar-dropdowns" target="_blank">GitHub Project</a></li>
+            </ul>-->
+            <ul class="nav navbar-nav navbar-right">
+<!--                <li class="active"><a href="index.html">Home</a></li>-->
+
+                <li><a href="index.html">Home</a></li>
+
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                       <li><a href="about-sti-holdings.html">Our Business</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Company</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about-sti-holdings2.html">Corporate Business Profile</a></li>
+                                <li><a href="about-sti-holdings2.html#missionvision">Mission, Vision, Values</a></li>
+                                <li><a href="board-of-directors.html">Board of Directors, Management Team, <br>& Executive Officers</a></li>
+                                <li><a href="pdf/STI-Holdings-Organizational-Structure-070114_Draft.pdf" target="_blank">Organizational Chart</a></li>
+                                <li><a href="pdf/STI-Holdings-Group-Corporate-Structure_Draft.pdf" target="_blank">Conglomerate Map / Group Corporate Structure</a></li>
+                                <li><a href="board-of-directors.html#articlesofincorportation">Articles of Incorporation and By-Laws & <br>All Amemdments thereto</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Corporate Governance <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li><a href="corporate-governance.html">Manual on Corporate Governance</a></li>
+                        <li><a href="pdf/STI-Holdings-Code-of-Business-Conduct-and-Ethics.pdf" target="_blank">Code of Business Conduct & Ethics</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Annual Corporate Governance<br> Report</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pdf/2013.07.175090_STI_Holdings_Annual_Corporate_Governance_Report_for_year_2012.pdf" target="_blank">ACGR for 2012</a></li>
+                                <li><a href="#">Code of Business Conduct & Ethics</a></li>
+                                <li><a href="#">Updates & Changes for 2013</a></li>
+                                <li><a href="#">Consolidated Changes in ACGR for 2013</a></li>
+                                <li><a href="#">Updates & Changes for 2014</a></li>
+                                <li><a href="#">Consolidated Changes in ACGR for 2014</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Board Committees</a></li>
+                        <li><a href="csr.html">Corporate Social Responsiblity</a></li>
+                        <li><a href="pdf/STI-Holdings-Risk-Management-Policy.pdf" target="_blank">Enterprise Risk Management</a></li>
+                        
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company Policies</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="company-policies.html">Whistle Blowing Policy</a></li>
+                                <li><a href="company-policies.html">Conflict of Interest Policy</a></li>
+                                <li><a href="company-policies.html">Insider Trading Policy</a></li>
+                                <li><a href="company-policies.html">Related Party Transactions Policy</a></li>
+                                <li><a href="company-policies.html">Policy & Data Relating to Health & <br>Safety & Welfare of Employees</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li><a href="disclosures.html">Disclosures</a></li>
+
+
+<!--                <li>
+                    <a href="disclosures.html" class="dropdown-toggle" data-toggle="dropdown">Disclosures <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li><a href="investor-relations.html">Investor Relations Officer</a></li>
+                        <li><a href="investor-relations.html#program">Investor Relations Program</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SEC Filings</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="investor-relations.html#secfilings">Total Outstanding Shares</a></li>
+                                <li><a href="investor-relations.html">Exchange where Listed</a></li>
+                                <li><a href="investor-relations.html">Top 20 Stockholders</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>-->
+
+
+
+
+                <li>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Press Materials/News <b class="caret"></b></a>
+                <ul class="dropdown-menu multi-level">
+                        <li><a href="news.html">Press Materials /News</a></li>                
+                         <li><a href="#">Presentations & Reports</a></li> 
+                </ul>
+                </li>
+
+
+                <li>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Investor Relations <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li><a href="investor-relations.html">Investor Relations Officer</a></li>
+                        <li><a href="investor-relations.html#program">Investor Relations Program</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SEC Filings</a>
+                            <ul class="dropdown-menu multisubmenu-left">
+                                <li><a href="investor-relations.html#secfilings">Total Outstanding Shares</a></li>
+                                <li><a href="investor-relations.html">Exchange where Listed</a></li>
+                                <li><a href="investor-relations.html">Top 20 Stockholders</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active deepskyblue">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('assets/img/cover/home.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated" data-animation="animated bounceInLeft">STI Completes Ortigas-Cainta Academic Center</h2>
+                    <p data-animation="animated bounceInRight">The campus sits on a sprawling four-hectare property that features two buildings: a three-storey edifice which houses the Head Office of STI and the seven-storey school. The new campus, which promises to house one of the most modern education facilities in the country, can accommodate 7,800 students.
+
+</p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('assets/img/cover/mobilebus.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Driving Education Where IT Matters</h2>
+                    <p>The STI Mobile School 2 is the second installment of STI’s “Driving Education Where IT Matters” campaign. The new Mobile School is equipped with a state-of-the-art computer laboratory with internet access, 27 units of multimedia computers, LCD monitors, sound system, and other top-of-the-line computer equipment.</p>
+                </div>
+            </div>
+            <div class="item skyblue">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('assets/img/cover/contact.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>STI Sends Largest Contingent to Run for Pasig</h2>
+                    <p>Following the success of the previous advocacy runs for the Pasig River, Team STI once again unfolded its solid support to the environmental cause as it sends the largest school contingent to the fourth installment of ABS-CBN Foundation's Kapit Bisig para sa Ilog Pasig (KBPIP) run</p>
+                </div>
+            </div>
+
+        </div>
+		
+        
+
+        
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+
+    </header>
+
+
+
+
+<style type="text/css">
+@media screen and (max-width: 640px) { 
+	.logo_bottom {	
+		width:20%;
+		height:auto;
+	}
+}
+</style>
+
+
+
+    <!-- Page Content -->
+<!-- <div style="background-color:#f5f5f5;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" align="center">
+            <p>&nbsp;</p>
+                <img src="assets/img/sticollege.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; 
+                <img src="assets/img/westnegros.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; 
+                <img src="assets/img/iacademy3.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; 
+                <img src="assets/img/delossantos.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; 
+        </div>
+     <p>&nbsp;</p>
+    </div>
+</div> -->
+
+
+
+
+
+
+<!-- Page Content -->
+<section class="page about-intro" style="padding:30px; background-color:#fff;">
+<div class="container">
+
+<div class="row">
+    <div class="col-md-6">
+    <p>&nbsp;</p>
+    <h2>Welcome to STI Education Systems Holdings Inc.</h2>
+    <p>STI Education Systems Holdings, Inc. (PSE Code: &ldquo;STI&rdquo;) is a leading education and investments corporation in the Philippines. STI Holdings is recognized as one of the largest network of schools in the country today with a total number of 80,200  students enrolled in 80 STI-branded schools nationwide composed of 66-STI branded colleges and 14-STI branded educational centers, two non-branded colleges, and one university.</p>
+    <p>In 2012, STI Holdings posted yet another milestone as it listed follow-on shares in the Philippine Stock Exchange, making it 30 percent publicly owned. The listing infused about P2.36 billion in fresh capital for the company.</p>
+<!--    <h4>The Company’s Business Operations</h4>
+    <p>STI Holdings (“the Company”) is the holding company within the Tanco Group that drives investment in its education business.  It is a publicly-listed company in the Philippine Stock Exchange and its registered address and principal place of business is 7th Floor iAcademy Building, 6764 Ayala Avenue, Makati City.</p>-->
+	<br>
+    <a class="btn btn-blue nav-external" href="about-sti-holdings.html">Read More</a>
+    </div>
+
+    <div class="col-md-6">
+    <img src="assets/img/pse_bell.jpg" class="img-responsive" style="margin-top:40px; margin-bottom:40px; width:400px;">
+    </div>
+</div><!-- /ROW -->
+
+</div>
+</section>
+    <!-- /.container -->
+
+
+
+
+
+
+
+
+<!-- SECTION 3 -->
+
+<!--<section id="work" class="page" >
+      <div class="container">
+        <div class="content text-center">
+           <div class="heading">
+            <h2 style="color:#555 !important;">Disclosures</h2>
+            <div class="border"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+          </div>
+          <p>&nbsp;</p><p>&nbsp;</p>
+
+        </div>
+      </div>
+</section>-->
+
+<!-- / SECTION 3 -->
+
+
+
+<!-- SECTION 4 -->
+
+   <section id="clients" class="page" style="background-attachment:fix;">
+      <div class="container">
+
+       <div class="row">
+
+       		<div class="col-md-7">
+            
+            	<p>&nbsp;</p>
+            
+            </div>
+       
+       		<div class="col-md-5">
+                <div class="content">
+                <div class="heading">
+                    <h2>Corporate Social Responsiblity</h2>
+                <!--    <div class="border"></div>-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+                    <p>Culpa, alias enim placeat earum quos ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+                    <p>&nbsp;</p>
+                     <a href="csr.html" class="btn btn-blue">Read More</a>
+                  </div>
+    
+                    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+                </div>
+            </div>
+            
+		</div>
+
+      </div>
+    </section>
+
+<!-- / SECTION 4 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION 5 -->
+
+   <section id="investorrelations" class="page">
+       <div class="container">
+            <div class="content text-center">
+           <div class="heading">
+                <h2>Press Materials / News</h2>
+                <div class="border"></div>
+                <p><a href="news.html">Click here</a> for more STI news.</p>
+                <p>&nbsp;</p>
+           </div>
+	
+    		<div class="col-sm-4">
+           	  <img src="assets/img/article/article-img1.jpg" class="img-responsive img-thumbnail" alt=""/>
+              <h5>76 STI schools ready to offer senior high school program under K to 12</h5>
+              <a href="news-inside.html" class="btn btn-blue">Read More</a>
+            </div>
+    		<div class="col-sm-4">
+           	  <img src="assets/img/article/article-img2.jpg" class="img-responsive img-thumbnail" alt=""/>
+              <h5>STI and ABS-CBN, Now on 7th Halalan Partnership</h5>
+                <a href="news-inside.html" class="btn btn-blue">Read More</a>
+            </div>
+    		<div class="col-sm-4">
+           	  <img src="assets/img/article/article-img3.jpg" class="img-responsive img-thumbnail" alt=""/>
+              <h5 class="text-left">STI Holdings revenue breaks P2 billion mark as enrollments drive more students</h5>
+                <a href="news-inside.html" class="btn btn-blue">Read More</a>
+            </div>
+				
+
+
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</section>
+
+<!-- /SECTION 5 -->
+
+
+
+
+<!-- SECTION 6 -->
+    <section id="contact" class="page" style="background-color:#f9f9f9;">
+      <div class="container">
+       <div class="content text-center">
+           <div class="heading">
+            <h2 style="color:#0093cf;">Contact Us</h2>
+            <div class="border"></div>
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+            <p>&nbsp;</p>
+            
+            <div class="col-sm-6 text-left" style="margin-bottom:70px;">
+<p class="lead thin" style=" margin-top:0px;">The headquarters of STI Holdings is located at 7F iACADEMY Building, 6764 Ayala Avenue, Makati City 1226. </p>
+<p>
+<i class="fa fa-hourglass" style="line-height:16px; margin-top:12px;"></i> &nbsp;<b>Office Hours:</b> 9:00 AM - 6:00 PM, Mondays to Fridays<br>
+<i class="fa fa-phone" style="line-height:16px; margin-top:0px;"></i> &nbsp;<b>Telephone:</b> +632 844-9553<br>
+<i class="fa fa-fax" style="line-height:16px; margin-top:0px;"></i> &nbsp;<b>Fax:</b> +632 844-9553<br>
+<i class="fa fa-envelope" style="line-height:16px; margin-top:0px;"></i> &nbsp;<b>Email:</b> info@stiholdings.com.ph</p>
+<p>&nbsp;</p>
+            </div>
+            
+            <div class="col-sm-6">
+            
+			<iframe src=		"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.8758350756823!2d121.02098600401328!3d14.556188500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90f7b679515%3A0xd814856c9463eb63!2sSti+Education+Services+Group!5e0!3m2!1sen!2sph!4v1447819131996" width="100%" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+<!-- /SECTION 6 -->
+
+
+
+
+
+
+<div class="inside-page-bottom" style="border:solid 1px #f5f5f5;">
+<div class="container">
+<div class="row" style="padding:24px;">
+
+<div align="center"><img src="assets/img/sticollege.jpg" class="logo_bottom img-thumbnail">&nbsp;&nbsp; <img src="assets/img/westnegros.jpg" class="logo_bottom img-thumbnail">&nbsp;&nbsp; <img src="assets/img/iacademy3.jpg" class="logo_bottom img-thumbnail">&nbsp;&nbsp; <img src="assets/img/delossantos.jpg" class="logo_bottom img-thumbnail"> </div>
+
+  </div>
+</div><!-- / CONTAINER -->
+</div><!-- / INSIDE PAGE TOP -->
+
+
+
+
+
+
+<!-- FOOTER -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+ <!--           <ul class="social list-inline ">
+              <li>
+                <a class="facebook" href="http://www.facebook.com" title="Facebook">
+                  <i class="fa fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="twitter" href="http://www.twitter.com" title="Twitter">
+                  <i class="fa fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="google-plus" href="http://www.plus.google.com" title="Google+">
+                  <i class="fa fa-google-plus fa-2x"></i>
+                </a>
+              </li>
+
+            </ul>-->
+            <p class="copyright">© Copyright 2015. STI Education Systems Holdings. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<!-- / FOOTER -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/demo.js"></script>
+
+   <!-- <script src="docs.js"></script>-->
+  </body>
+</html>
