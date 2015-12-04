@@ -15,18 +15,50 @@
         <h3>Recent Uploads</h3>
 <table class="table table-striped">
           <tbody>
+
+
+
+<?php
+include 'connection.php';
+
+
+
+	$query_total="SELECT tbl_pdf.title, tbl_pdf.path, tbl_pdf.year, tbl_pdf_category.categoryname FROM tbl_pdf LEFT JOIN tbl_pdf_category ON tbl_pdf.category=tbl_pdf_category.categoryid LIMIT 7";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+?>
+
             <tr>
-              <td width="60%"><a href="#">PSE Document March 201500</a></td>
+              <td width="85%"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="administration/<?php echo $row["path"]; ?>" target="_blank"><?php echo $row["title"]; ?></a><br><p style="font-size:11px;"><?php echo $row["categoryname"]; ?></p></td>
+   
+              <td width="15%"><?php echo $row["year"]; ?></td>
+            </tr>
+	
+<?php		
+		}
+	}
+?>
+
+<!--            <tr>
+              <td width="60%"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">PSE Document March 201500</a></td>
               <td width="30%">PSE</td>
               <td width="20%">2015</td>
             </tr>
             <tr>
-              <td><a href="#">PSE Document March 2015</a></td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">PSE Document March 2015</a></td>
               <td>PSE</td>
               <td>2015</td>
             </tr>
             <tr>
-              <td><a href="#">PSE Document March 2015</a></td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">PSE Document March 2015</a></td>
               <td>SEC</td>
               <td>2014</td>
             </tr>
@@ -54,6 +86,7 @@
               <td><a href="#">PSE Document March 2015</a></td>
               <td>PSE</td>
               <td>2014</td>
-            </tr>
+            </tr>-->
+            
           </tbody>
         </table>

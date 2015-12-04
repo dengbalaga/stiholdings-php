@@ -32,7 +32,29 @@
             <p>&nbsp;</p>
             
             <!-- left body -->
-            <h2 style="margin-top:0px;">Annual Corporate Governance Report</h2>
+ 
+ 
+ <?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=20";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+
+           echo $row["content"];
+		
+		}
+	}
+?>
+ 
+<!--            <h2 style="margin-top:0px;">Annual Corporate Governance Report</h2>
             
             <hr>
             
@@ -62,8 +84,7 @@
               </p>
             </div>
 
-
-			<p>&nbsp;</p>       
+			<p>&nbsp;</p>   -->    
  			<!-- /left body -->  
 
 		<p>&nbsp;</p>

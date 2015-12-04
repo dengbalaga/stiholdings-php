@@ -26,7 +26,7 @@
     <div class="col-md-8" style="padding-right:40px;">
     
 			<!-- breadcrumbs -->    		
-        	<span class="glyphicon glyphicon-home" aria-hidden="true"></span> <a href="index.php">Home</a> > <a href="#">Corporate Governance</a>
+        	<span class="glyphicon glyphicon-home" aria-hidden="true"></span> <a href="index.php">Home</a> > <a href="#">Presentations & Reports</a>
             <!-- /breadcrumbs -->
             
             <p>&nbsp;</p>
@@ -35,7 +35,7 @@
 
 <?php
 include 'connection.php';
-	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=22";	
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=24";	
 	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
 	//$num_rows = mysql_num_rows($result);
 	if(mysql_num_rows($result)==0)
@@ -51,8 +51,7 @@ include 'connection.php';
 		
 		}
 	}
-?>  
-    
+?>      
  			<!-- /left body -->  
 
 		<p>&nbsp;</p>

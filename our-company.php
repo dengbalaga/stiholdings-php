@@ -32,7 +32,28 @@
             <p>&nbsp;</p>
             
             <!-- left body -->
-            <h3 style="margin-top:0px;">Corporate Profile</h3>
+
+<?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=16";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+
+           echo $row["content"];
+		
+		}
+	}
+?>
+
+<!--        <h3 style="margin-top:0px;">Corporate Profile</h3>
             <hr>
             <p><img src="assets/img/article/esg.jpg" width="322" height="187" align="left" style="margin-right:24px; margin-bottom:6px;">STI Education Systems Holdings, Inc. (PSE Code: &ldquo;STI&rdquo;) is a holding company geared towards the educational and financial empowerment of the Filipino. Through its portfolio, it provides highly relevant, accessible, and industry-wise academic programs across the country. STI Holdings also provides investment opportunities for individuals in the healthcare, pre-need, and life insurance sectors.</p>
             <p>Under its wings are the STI Education Services Group (STI ESG), which runs STI—a network of 80 schools across the country—as well as iACADEMY and the DLS-STI College of Health Professions, which are recognized leaders in providing education in information technology and health, respectively.  On October 1, 2013, STI Holdings acquired a controlling stake in West Negros University Corp. (WNU) through the purchase of 99.45% of its issued and outstanding common stock and 99.93% of the issued and outstanding preferred stock.</p>
@@ -71,7 +92,7 @@
             </blockquote>
             <blockquote style="font-size:1.1em;">
               <p>We shall carry out this mission with utmost integrity, dedication, competence, and responsiveness to the market which are the hallmarks of our corporate culture.</p>
-            </blockquote>           
+            </blockquote>  -->         
  			<!-- /left body -->  
 
 		<p>&nbsp;</p>

@@ -32,24 +32,26 @@
             <p>&nbsp;</p>
             
             <!-- left body -->
-            <h2 style="margin-top:0px;">Corporate Social Responsibility</h2>
-            <div style="margin-left:24px; margin-top:24px;"> <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 10 September 2012</a><br>
-              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 31 January 2012</a><br>
-              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 30 May 2006</a><br>
-              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 22 February 1999</a><br>
-              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 4 September 1997</a><br>
-              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 28 March 1980</a><br>
-              <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 10 July 1946</a><br>
-            </div>
-            <hr>
-            <h2 style="margin-top:0px;">Board Committees</h2>
-            <div style="margin-left:24px; margin-top:24px;">
-              <p>&nbsp;</p>
-              <p></p>
-            </div>
-            <h2 style="margin-top:0px; margin-bottom:24px;"><br>
-            </h2>
-			<p>&nbsp;</p>       
+
+<?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=21";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+
+           echo $row["content"];
+		
+		}
+	}
+?>      
  			<!-- /left body -->  
 
 		<p>&nbsp;</p>

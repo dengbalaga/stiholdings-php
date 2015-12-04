@@ -32,9 +32,29 @@
             <p>&nbsp;</p>
             
             <!-- left body -->
-            <h2 style="margin-top:0px; margin-bottom:24px;">STI Holdings Board of Directors</h2>
+
+<?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=17";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+
+           echo $row["content"];
+		
+		}
+	}
+?>
+
+<!--            <h2 style="margin-top:0px; margin-bottom:24px;">STI Holdings Board of Directors</h2>
             <blockquote style="color:#0c86b6; width:92%;">At the helm of STI Holdings is its distinguished members of the Board of Directors, who were elected during the September 26, 2014 Annual Stockholders Meeting. </blockquote>
-            <!--                        <h3 style="color:#0c86b6; width:92%;">At the helm of STI Holdings is its distinguished members of the Board of Directors, who were elected during the September 26, 2014 Annual Stockholders Meeting.            </h3>-->
             <h3 style="margin-bottom:0px;">&nbsp;</h3>
             <div class="row">
               <div class="col-sm-4"> <img src="assets/img/article/bod_tanco.jpg" width="80%" height="auto" align="left" style="margin-right:24px; margin-bottom:12px;">
@@ -109,19 +129,9 @@
                 <p>&nbsp;</p>
               </div>
             </div>
-            <!--<p>&nbsp;</p>
-<hr>      
-<p>&nbsp;</p>       
 
-        <h2>Executive Officers:</h2>
-            <p>1.  Chairman of the Board                                          –     Eusebio H. Tanco<br>
-              2.  President and Chief Executive Officer                –     Monico V. Jacob<br>
-              3.  Treasurer and Chief Finance Officer                   –     Yolanda M. Bautista<br>
-              4.  Vice President for Investor Relations                  –     Joseph Augustin L. Tanco<br>
-              5.  Vice President and Chief Investment Officer     –     Paulo Martin O. Bautista<br>
-              6.  Corporate Secretary and Compliance Officer   –     Arsenio C. Cabrera, Jr.<br>
-              7.  Assistant Corporate Secretary                              –     Anna Carmina S. Herrera</p>-->
             <p>&nbsp;</p>
+            
             <hr>
             <a name="articlesofincorportation"></a>
             <p>&nbsp;</p>
@@ -133,7 +143,9 @@
               <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">Articles of Incorporation – 16 August 1974</a><br>
               <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">Articles of Incorporation – 28 June 1946</a><br>
             </div>
+            
             <p>&nbsp;</p>
+            
             <hr>
             <p>&nbsp;</p>
             <h2>By-Laws</h2>
@@ -145,7 +157,7 @@
               <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 28 March 1980</a><br>
               <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 10 July 1946</a><br>
             </div>
-			<p>&nbsp;</p>       
+			<p>&nbsp;</p>  -->     
  			<!-- /left body -->  
 
 		<p>&nbsp;</p>

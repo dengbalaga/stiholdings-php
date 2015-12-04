@@ -40,7 +40,7 @@ include('ps_pagination.php');
 
 include 'connection.php';
 
-	$sql = "SELECT * FROM tbl_news ORDER BY newsid ASC";
+	$sql = "SELECT * FROM tbl_news ORDER BY newsid DESC";
 
 	$pager = new PS_Pagination($conn, $sql, 5, 5, "param1=valu1&param2=value2");
 
@@ -72,7 +72,7 @@ include 'connection.php';
                 <h4 style="margin-top:0px; padding-top:0px; line-height:22px;"><a href="#"><?php echo $row["title"]; ?></a></h4>
                 <?php echo $row["content_preview"]; ?>
                 <p>&nbsp;</p>
-                <a class="btn btn-xs btn-info" href="news-inside.php?id=<?php echo $row["newsid"]; ?>">Read More</a></div>
+                <a class="btn btn-xs btn-info" href="news-view.php?id=<?php echo $row["newsid"]; ?>">Read More</a></div>
             </div>
 
 

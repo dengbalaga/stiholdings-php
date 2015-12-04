@@ -13,7 +13,41 @@
 
 
         <h3>Latest News</h3>        
+
+<?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_news LIMIT 5";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+?>
+
+
     	<div class="row" style="border-top:1px solid #dedede; padding-top:12px;margin-top:12px;">
+        	<div class="col-md-4">
+            	<img src="administration/<?php echo $row["photo"]; ?>" style="width:100%; height:auto;">
+            </div>
+        	<div class="col-md-8" style="padding-left:0px;">
+            	<p class="sidebar-news-title"><a href="#"><?php echo $row["title"]; ?></a></p>
+                <p class="sidebar-news-subtitle"><?php echo $row["date_publish"]; ?></p>
+            </div>
+        </div>		
+		
+		
+<?php		
+		}
+	}
+?>
+
+
+ <!--   	<div class="row" style="border-top:1px solid #dedede; padding-top:12px;margin-top:12px;">
         	<div class="col-md-4">
             	<img src="assets/img/article/front_306x191.jpg" style="width:100%; height:auto;">
             </div>
@@ -48,4 +82,4 @@
             	<p class="sidebar-news-title">British Council Partners with STI towards Innovative Learning</p>
                 <p class="sidebar-news-subtitle">March 8, 2015</p>
             </div>
-        </div>
+        </div>-->

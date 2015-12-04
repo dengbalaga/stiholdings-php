@@ -8,10 +8,10 @@
                 <span class="icon-bar"></span>
             </button>
            <div class="logowrapper-hor">
-           <a class="navbar-brand nav-external" href="index.html" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute.png" style="height:70px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; " class="nav-logo-absolutesmall"></a>
+           <a class="navbar-brand nav-external" href="index.php" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute.png" style="height:70px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; " class="nav-logo-absolutesmall"></a>
 		  </div>
            <div class="logowrapper">
-           <a class="navbar-brand nav-external" href="index.html" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute.png" style="height:70px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; " class="nav-logo-absolute"></a>
+           <a class="navbar-brand nav-external" href="index.php" style="margin:0; padding:0;"><img src="assets/img/logo_navbar-absolute.png" style="height:70px; width:auto; margin:3px 0px 2px 0px; padding:0; position:absolute; top:-6px; " class="nav-logo-absolute"></a>
 		</div>
 
         </div>

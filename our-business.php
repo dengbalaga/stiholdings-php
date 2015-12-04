@@ -32,7 +32,28 @@
             <p>&nbsp;</p>
             
             <!-- left body -->
-            <h3 style="margin-top:0px;">The Company&rsquo;s Business Operations</h3>
+
+<?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=9";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+
+           echo $row["content"];
+		
+		}
+	}
+?>
+
+<!--            <h3 style="margin-top:0px;">The Company&rsquo;s Business Operations</h3>
             <hr>
             <p><img src="assets/img/article/profile_image.jpg" width="322" height="187" align="right" style="margin-left:24px; margin-bottom:6px;"> STI Holdings (&ldquo;the Company&rdquo;) is the holding company within the Tanco Group that drives investment in its education business.  It is a publicly-listed company in the Philippine Stock Exchange and its registered address and principal place of business is 7th Floor iAcademy Building, 6764 Ayala Avenue, Makati City.</p>
             <p>STI Holdings, being a holding company, derives its revenues from dividends declared by its subsidiaries and interest income on short-term placements.</p>
@@ -43,7 +64,7 @@
             <p>PWU is a private non-stock, non-profit educational institution which provides basic, secondary and tertiary education while UNLAD is a real estate company controlled by the Benitez Family and has some assets which are used to support PWU&rsquo;s educational thrust.</p>
             <p>On October 1, 2013, STI Holdings acquired a controlling stake in West Negros University Corp. (WNU) through the purchase of 99.45% of its issued and outstanding common stock and 99.93% of the issued and outstanding preferred stock.</p>
             <p>The acquisition is part of the planned expansion of the Company.  It also widened its course offerings at the tertiary level.  It provided STI Holdings another entry into basic education which is the focus of the government&rsquo;s K-12 program, and into the graduate school level which is vital in updating the development of human capital in the country.</p>
-            <p>At the time of acquisition, WNU has 5,075 students in all three levels, that is, basic education, tertiary and graduate school.  The University&rsquo;s 3.1 hectare campus is situated in the center of Bacolod City in Negros Occidental.</p>
+            <p>At the time of acquisition, WNU has 5,075 students in all three levels, that is, basic education, tertiary and graduate school.  The University&rsquo;s 3.1 hectare campus is situated in the center of Bacolod City in Negros Occidental.</p>-->
  			<!-- /left body -->           
                        
 			<p>&nbsp;</p>

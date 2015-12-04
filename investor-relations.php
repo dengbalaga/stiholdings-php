@@ -30,30 +30,32 @@
             <!-- /breadcrumbs -->
             
             <p>&nbsp;</p>
+
+<?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=23";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+
+           echo $row["content"];
+		
+		}
+	}
+?> 
+
+
             
             <!-- left body -->
-            <h3 style="margin-top:0px;">Investor Relations Officer</h3>
-            <hr>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h3 style="margin-top:0px;">Investor Relations Program</h3>
-            <hr>
-            <p>&nbsp;</p>
-            <p></p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h3 style="margin-top:0px;">SEC Filings</h3>
-            <hr>
-            <p>&nbsp;</p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <ul class="pager"><p>&nbsp;</p>
-            </ul>
-            <p></p>
-            <h2 style="margin-top:0px;">&nbsp;</h2>
+
+ 
             
     </div>
 	<!-- /LEFT CONTENT -->

@@ -29,9 +29,31 @@
             <!-- /breadcrumbs -->
             
             <p>&nbsp;</p>
+
+
+<?php
+include 'connection.php';
+	$query_total="SELECT * FROM tbl_static_pages WHERE pageid=18";	
+	$result=mysql_query($query_total) or die('Error,query Failed.'.mysql_error());
+	//$num_rows = mysql_num_rows($result);
+	if(mysql_num_rows($result)==0)
+	{
+		echo "There are no Current Post at this time";
+	}
+	else
+	{
+  		while ($row = mysql_fetch_array($result))
+  		{ 
+
+           echo $row["content"];
+		
+		}
+	}
+?>
+
             
             <!-- left body -->
-            <h2 style="margin-top:0px;">Manual on Corporate Governance</h2>
+<!--            <h2 style="margin-top:0px;">Manual on Corporate Governance</h2>
             <div style="margin-left:24px; margin-top:24px;"> <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 10 September 2012</a><br>
               <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 31 January 2012</a><br>
               <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="#">By-Laws – 30 May 2006</a><br>
@@ -49,7 +71,7 @@
             </div>
             <h2 style="margin-top:0px; margin-bottom:24px;"><br>
             </h2>
-			<p>&nbsp;</p>       
+			<p>&nbsp;</p>       -->
  			<!-- /left body -->  
 
 		<p>&nbsp;</p>
